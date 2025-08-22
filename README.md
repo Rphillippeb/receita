@@ -19,15 +19,7 @@ Atualmente, o livro conta com os seguintes clássicos:
 *   **HTML5:** Para a estrutura e semântica do conteúdo.
 *   **CSS3:** Para toda a estilização, layout e design responsivo.
 
-## 🚀 Como Visualizar
-
-Basta clonar este repositório e abrir o arquivo `index.html` em seu navegador de preferência.
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-# Abra o arquivo index.html no navegador
-
+excalidraw
 https://excalidraw.com/#json=fdeAFpRug1WGOcc598qWL,qWEbKXK6h-A0A-k2LOcgWQ
-justificativa: eu gosto desse mundo da culinária.
 
+justifica: Escolhi o tema culinária para o meu site porque é algo que faz parte da vida de todo mundo e desperta bastante interesse. Dá pra trabalhar com receitas, dicas e curiosidades de um jeito leve e criativo. Além disso, é um tema que permite usar bem as ferramentas de design e deixar o site visualmente atrativo e fácil de usar.
