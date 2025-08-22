@@ -27,3 +27,7 @@ Basta clonar este repositório e abrir o arquivo `index.html` em seu navegador d
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 # Abra o arquivo index.html no navegador
+
+https://excalidraw.com/#json=fdeAFpRug1WGOcc598qWL,qWEbKXK6h-A0A-k2LOcgWQ
+justificativa: eu gosto desse mundo da culinária.
+
