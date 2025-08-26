@@ -41,6 +41,9 @@ Atualmente, o site conta com as seguintes receitas brasileiras:
 
 - **HTML5**: Estrutura e semântica do conteúdo.
 - **CSS3**: Estilização, responsividade e layout.
+- Bootstrap 5
+Git & GitHub
+🌐 APIs Utilizad
 
 ---
 
