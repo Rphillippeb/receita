@@ -1,0 +1,73 @@
+
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Navbar */
+  nav {
+    background-color: #facc15; /* amarelo principal */
+  }
+
+  nav a {
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #92400e; /* laranja queimado */
+  }
+
+  /* Títulos */
+  h1, h2, h3 {
+    color: #ca8a04; /* tom dourado */
+  }
+
+  /* Ícones */
+  i {
+    color: #f59e0b; /* amarelo/laranja */
+  }
+
+  /* Links */
+  a {
+    text-decoration: none;
+  }
+
+  /* Dica especial */
+  .dica {
+    background-color: #fef9c3;
+    border-left: 6px solid #facc15;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+
+  /* Imagens */
+  img {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+  }
+
+  /* Cartões (ingredientes, preparo, etc.) */
+  .card {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Seções */
+  section:hover {
+    background-color: #fffbeb;
+  }
+
