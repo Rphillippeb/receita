@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores & Receitas - Sua Cozinha Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>🍳 Sabores & Receitas</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="receitas.html" class="nav-link">Receitas</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+         Hero Section 
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Descubra o Mundo dos Sabores</h2>
+                <p class="hero-subtitle">Receitas deliciosas, análise nutricional e ferramentas culinárias em um só lugar</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('featured-recipes')">Explorar Receitas</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('tools')">Ferramentas</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="imagens/ingredientesjpg.avif" alt="Ingredientes culinários">
+            </div>
+        </section>
+
+         Featured Recipes 
+        <section id="featured-recipes" class="section">
+            <div class="container">
+                <h2 class="section-title">Receitas em Destaque</h2>
+                <div class="recipe-grid" id="featuredRecipes">
+                    <div class="loading">Carregando receitas...</div>
+                </div>
+            </div>
+        </section>
+
+         Tools Section 
+        <section id="tools" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Ferramentas Culinárias</h2>
+                <div class="tools-grid">
+                     Recipe Search 
+                    <div class="tool-card">
+                        <h3>🔍 Buscar Receitas</h3>
+                        <div class="search-form">
+                            <input type="text" id="recipeSearch" placeholder="Digite um ingrediente ou prato...">
+                            <button onclick="searchRecipes()" class="btn btn-primary">Buscar</button>
+                        </div>
+                        <div id="searchResults" class="search-results"></div>
+                    </div>
+
+                     Nutrition Analyzer 
+                    <div class="tool-card">
+                        <h3>📊 Análise Nutricional</h3>
+                        <div class="nutrition-form">
+                            <textarea id="ingredientsList" placeholder="Liste os ingredientes (ex: 100g arroz, 200g frango, 1 tomate)"></textarea>
+                            <button onclick="analyzeNutrition()" class="btn btn-primary">Analisar</button>
+                        </div>
+                        <div id="nutritionResults" class="nutrition-results"></div>
+                    </div>
+
+                     Unit Converter 
+                    <div class="tool-card">
+                        <h3>⚖️ Conversor de Medidas</h3>
+                        <div class="converter-form">
+                            <input type="number" id="convertValue" placeholder="Quantidade">
+                            <select id="fromUnit">
+                                <option value="cup">Xícara</option>
+                                <option value="ml">ml</option>
+                                <option value="tbsp">Colher de sopa</option>
+                                <option value="tsp">Colher de chá</option>
+                                <option value="g">Gramas</option>
+                                <option value="kg">Quilos</option>
+                            </select>
+                            <span>para</span>
+                            <select id="toUnit">
+                                <option value="ml">ml</option>
+                                <option value="cup">Xícara</option>
+                                <option value="tbsp">Colher de sopa</option>
+                                <option value="tsp">Colher de chá</option>
+                                <option value="g">Gramas</option>
+                                <option value="kg">Quilos</option>
+                            </select>
+                            <button onclick="convertUnits()" class="btn btn-primary">Converter</button>
+                        </div>
+                        <div id="conversionResult" class="conversion-result"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Newsletter 
+        <section class="newsletter">
+            <div class="container">
+                <h2>Receba Receitas Semanais</h2>
+                <p>Cadastre-se e receba as melhores receitas direto no seu email</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor email" required>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sabores & Receitas</h3>
+                    <p>Sua cozinha digital com as melhores receitas e ferramentas culinárias.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="receitas.html">Receitas</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Pratos Principais</a></li>
+                        <li><a href="#">Sobremesas</a></li>
+                        <li><a href="#">Bebidas</a></li>
+                        <li><a href="#">Vegetariano</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@saboresereceitas.com</p>
+                    <p>📱 (51) 5462-7586</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sabores & Receitas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

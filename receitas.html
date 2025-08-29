@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Sabores & Receitas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>🍳 Sabores & Receitas</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="receitas.html" class="nav-link active">Receitas</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Nossas Receitas</h1>
+                <p>Explore nossa coleção de receitas deliciosas e fáceis de fazer</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                 Filters 
+                <div class="recipe-filters">
+                    <h3>Filtrar por categoria:</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">Todas</button>
+                        <button class="filter-btn" data-category="beef">Carne</button>
+                        <button class="filter-btn" data-category="chicken">Frango</button>
+                        <button class="filter-btn" data-category="seafood">Frutos do Mar</button>
+                        <button class="filter-btn" data-category="vegetarian">Vegetariano</button>
+                        <button class="filter-btn" data-category="dessert">Sobremesas</button>
+                    </div>
+                </div>
+
+                 Search Bar 
+                <div class="recipe-search-bar">
+                    <input type="text" id="recipeSearchPage" placeholder="Buscar receitas...">
+                    <button onclick="searchRecipesPage()" class="btn btn-primary">Buscar</button>
+                </div>
+
+                 Recipes Grid 
+                <div class="recipe-grid" id="allRecipes">
+                    <div class="loading">Carregando receitas...</div>
+                </div>
+
+                 Load More Button 
+                <div class="load-more-container">
+                    <button id="loadMoreBtn" class="btn btn-secondary" onclick="loadMoreRecipes()">Carregar Mais</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sabores & Receitas</h3>
+                    <p>Sua cozinha digital com as melhores receitas e ferramentas culinárias.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="receitas.html">Receitas</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Pratos Principais</a></li>
+                        <li><a href="#">Sobremesas</a></li>
+                        <li><a href="#">Bebidas</a></li>
+                        <li><a href="#">Vegetariano</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@saboresereceitas.com</p>
+                    <p>📱 (51) 5462-7586</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sabores & Receitas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
